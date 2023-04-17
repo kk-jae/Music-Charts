@@ -47,7 +47,6 @@ export default function MusicChartUI() {
 
   const onClickUp = () => {
     const sortedResult = [...musicData].sort((a, b) => {
-      // 원본값 변경 방지
       if (a["im:name"].label > b["im:name"].label) {
         return 1;
       }
@@ -61,7 +60,6 @@ export default function MusicChartUI() {
 
   const onClickDown = () => {
     const sortedResult = [...musicData].sort((a, b) => {
-      // 원본값 변경 방지
       if (a["im:name"].label < b["im:name"].label) {
         return 1;
       }
