@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
   cursor: pointer;
 
   :hover {
-    background-color: #f5f5f5;
+    background-color: rgba(140, 215, 144, 0.2);
   }
 `;
 
@@ -49,7 +49,7 @@ export const Artist = styled.div`
 `;
 
 export const Right = styled.div`
-  width: 2%;
+  width: 3%;
   font-size: 30px;
   color: #bfbfbf;
   cursor: pointer;

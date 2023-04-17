@@ -4,7 +4,7 @@
 import { SearchOutlined } from "@ant-design/icons";
 import { Modal } from "antd";
 import axios from "axios";
-import { ChangeEvent, SetStateAction, useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { Button01 } from "../../commons/hooks/button";
 import { Input01 } from "../../commons/hooks/input";
 import { IDataLabel } from "../../commons/types";

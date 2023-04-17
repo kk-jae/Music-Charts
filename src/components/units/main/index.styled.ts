@@ -2,8 +2,8 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div`
   width: 100vw;
-  color: #8cd790;
-  padding: 3% 10% 0px 10%;
+  color: #3f4b3b;
+  padding: 1% 10% 0px 10%;
 `;
 
 export const Top = styled.div`
@@ -23,7 +23,7 @@ export const Search = styled.div`
 
 export const SearchWrapper = styled.span`
   cursor: pointer;
-  color: #8cd790;
+  color: #3f4b3b;
   position: absolute;
   top: 0;
   right: 0;

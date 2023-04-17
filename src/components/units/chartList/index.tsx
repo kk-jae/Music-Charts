@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
 
-import { PlayCircleOutlined, PlusCircleOutlined } from "@ant-design/icons";
+import { PlayCircleOutlined } from "@ant-design/icons";
 import { useMoveToPage } from "../../commons/hooks/custom/useMoveToPage";
 import { IDataLabel } from "../../commons/types";
 import * as S from "./index.styled";
@@ -21,7 +21,7 @@ export default function ChartList(props: IListProps) {
             <S.Wrapper
               key={el.id.label}
               onClick={onClickMoveToPage(
-                `/musicChart/detail/${props.musicData[0].id.attributes["im:id"]}`
+                `/musicChart/detail/${el.id.attributes["im:id"]}`
               )}
             >
               <S.Left>
@@ -40,7 +40,7 @@ export default function ChartList(props: IListProps) {
             <S.Wrapper
               key={el.id.label}
               onClick={onClickMoveToPage(
-                `/musicChart/detail/${props.musicData[0].id.attributes["im:id"]}`
+                `/musicChart/detail/${el.id.attributes["im:id"]}`
               )}
             >
               <S.Left>

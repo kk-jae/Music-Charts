@@ -8,11 +8,11 @@ export const Input = styled.input<IProps>`
   width: ${(props) => (props.width ? "props.width" : "100%")};
   border: none;
   outline: none;
-  border-bottom: 3px solid #8cd790;
+  border-bottom: 3px solid #3f4b3b;
   font-weight: 500;
 
   ::placeholder {
-    color: #8cd790;
-    font-weight: 600;
+    color: #3f4b3b;
+    font-weight: 500;
   }
 `;
