@@ -1,15 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
 
+import { SearchOutlined } from "@ant-design/icons";
 import { Modal } from "antd";
 import axios from "axios";
 import { ChangeEvent, SetStateAction, useEffect, useState } from "react";
+import { Button01 } from "../../commons/hooks/button";
+import { Input01 } from "../../commons/hooks/input";
+import { IDataLabel } from "../../commons/types";
 import ChartList from "../chartList";
 import * as S from "./index.styled";
-
-interface IDataLabel {
-  ["im:name"]: any;
-}
 
 export default function MusicChartUI() {
   const [musicData, setMusicData] = useState<IDataLabel[]>([]);
@@ -74,16 +74,22 @@ export default function MusicChartUI() {
   };
 
   return (
-    <div>
-      <div>
-        <input onChange={onChangeSearchTitle} />
-        <button onClick={onClickSearchBtn}>검색</button>
-        <div>
-          <button onClick={onClickUp}>오름 정렬</button>
-          <button onClick={onClickDown}>내림 정렬</button>
-        </div>
-      </div>
+    <S.Container>
+      <S.Top>
+        <S.Title>ELpark_Top100 차트</S.Title>
+        <S.Search>
+          <Input01
+            placeholder="제목을 검색하세요"
+            onChange={onChangeSearchTitle}
+          />
+          <S.SearchWrapper>
+            <SearchOutlined onClick={onClickSearchBtn} />
+          </S.SearchWrapper>
+        </S.Search>
+      </S.Top>
+      <Button01 title="오름정렬" onClick={onClickUp} />
+      <Button01 title="내림정렬" onClick={onClickDown} />
       <ChartList resultList={resultList} musicData={musicData} />
-    </div>
+    </S.Container>
   );
 }
