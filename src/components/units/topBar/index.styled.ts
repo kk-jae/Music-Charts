@@ -20,6 +20,7 @@ export const Container = styled.div`
 
 export const Left = styled.div``;
 export const Logo = styled.h1`
+  cursor: pointer;
   ${mediaQueries("tablet")} {
     font-size: 1.5rem;
   }
