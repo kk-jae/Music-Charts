@@ -1,6 +1,6 @@
 
  
-## 안녕하세요 권현재입니다. 🎶 Music-Charts 
+## 🎶 Music-Charts  / 프론트엔드 권현재
 
 ## 0. 컴포넌트 
 - input과 button, TopBar를 공통컴포넌트로 만들어 사용하였습니다.
