@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { mediaQueries } from "../../../commons/libraries/MediaQueries";
 
 export const Container = styled.div`
   color: black;
@@ -35,17 +36,22 @@ export const Img = styled.img`
 `;
 export const Art = styled.div`
   height: 75%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 `;
 export const Name = styled.div`
   font-weight: 600;
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
 `;
 export const Artist = styled.div`
   font-size: 14px;
   font-weight: 600;
   color: #bfbfbf;
+  overflow: hidden;
 `;
 
 export const Right = styled.div`
@@ -56,5 +62,8 @@ export const Right = styled.div`
 
   :hover {
     color: black;
+  }
+  ${mediaQueries("phone")} {
+    font-size: 25px;
   }
 `;

@@ -1,3 +1,4 @@
+import { mediaQueries } from "./../../../commons/libraries/MediaQueries";
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
@@ -14,11 +15,21 @@ export const Top = styled.div`
 export const Title = styled.h1`
   padding-bottom: 40px;
   font-size: 50px;
+
+  ${mediaQueries("tablet")} {
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+  }
 `;
 
 export const Search = styled.div`
-  width: 20%;
+  width: 30vw;
   position: relative;
+
+  ${mediaQueries("tablet")} {
+    width: 40vw;
+    border-bottom: 1px solid #3f4b3b;
+  }
 `;
 
 export const SearchWrapper = styled.span`
@@ -28,4 +39,8 @@ export const SearchWrapper = styled.span`
   top: 0;
   right: 0;
   font-size: 20px;
+
+  ${mediaQueries("tablet")} {
+    font-size: 15px;
+  }
 `;
