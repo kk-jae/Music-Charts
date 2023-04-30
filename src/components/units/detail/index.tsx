@@ -27,7 +27,7 @@ export default function DetailUI() {
 
   return (
     <S.Container>
-      <S.Title>ELpark_Top100 차트</S.Title>
+      <S.Title>Top100 차트</S.Title>
       <S.Wrapper>
         <S.Left>
           <S.Img src={result?.[0]?.["im:image"][0].label} />

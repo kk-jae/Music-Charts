@@ -8,7 +8,6 @@ export const TopBarItem = () => {
     <S.Container>
       <S.Item>로그인</S.Item>
       <S.Item>My-PlayList</S.Item>
-      <S.Item onClick={onClickMoveToPage("http://elpark.kr/")}>ELGrop</S.Item>
     </S.Container>
   );
 };

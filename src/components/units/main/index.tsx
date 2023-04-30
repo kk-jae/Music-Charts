@@ -74,7 +74,7 @@ export default function MusicChartUI() {
   return (
     <S.Container>
       <S.Top>
-        <S.Title>ELpark_Top100 차트</S.Title>
+        <S.Title>Top100 차트</S.Title>
         <S.Search>
           <Input01
             placeholder="제목을 검색하세요"

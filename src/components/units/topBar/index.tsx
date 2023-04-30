@@ -15,14 +15,11 @@ export const TopBarUI = () => {
   return (
     <S.Container>
       <S.Left>
-        <S.Logo onClick={onClickMoveToPage("/")}>ElMusic</S.Logo>
+        <S.Logo onClick={onClickMoveToPage("/")}>Music</S.Logo>
       </S.Left>
       <S.Right>
         <S.Right_Item>로그인</S.Right_Item>
         <S.Right_Item>My-PlayList</S.Right_Item>
-        <S.Right_Item onClick={onClickMoveToPage("http://elpark.kr/")}>
-          ELGrop
-        </S.Right_Item>
       </S.Right>
       <S.HamBurger>
         <MenuOutlined onClick={onClickOpenTopBar} />
